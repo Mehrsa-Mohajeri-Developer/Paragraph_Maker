@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph Maker</title>
+    <style>
+        body {
+            background-color: #f1f5f8;
+            width: 100%;
+            height: 100vh;
+
+            >div:nth-of-type(1) {
+                width: fit-content;
+                height: 40px;
+                margin: 100px auto;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+                >label {
+                    color: #063250;
+                    font-weight: bolder;
+                }
+
+                >input {
+                    margin: 0 30px;
+                    width: 50px;
+                }
+
+                >button {
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: none;
+                    outline: none;
+                    background-color: rgb(79, 133, 246);
+                    transition: .3s ease-in-out all;
+                    color: white;
+                    font-weight: bold;
+
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+            }
+
+            >div:nth-of-type(2) {
+                width: 80%;
+                margin: 100px auto;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: #6e87a1;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>Paragraphs: </label>
+        <input type="number" min="0">
+        <button>GENERATE</button>
+    </div>
+    <div id="div"></div>
+    <script src="master.js"></script>
+</body>
+
+</html>
